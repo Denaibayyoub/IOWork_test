@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
+<head>
+<title>Etudiants</title>
+<meta http-equiv="Content-Type" content="text/html;
+charset=iso-8859-1" />
+<link rel="stylesheet" media="screen" type="text/css"
+title="Design" href="design.css" />
+<link href="Design.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.Style4 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+}
+.Style5 {	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+}
+-->
+</style>
+</head>
+<body>
+<table width="1007" height="117" border="1" bgcolor="#CCCCCC">
+           <tr>
+             <th width="160" height="69" bgcolor="#CCFFFF" class="Style5" scope="col">&nbsp;</th>
+             <th width="831" bgcolor="#CCFFFF" class="Style5" scope="col"><h2><span class="Style5">Etudiants</span></h2></th>
+           </tr>
+           <tr>
+             <th height="39" bgcolor="#CCFFFF" scope="row"><p><a href="index.html">Insertion</a></p>
+             <p><a href="recherche.html">Recherche</a></p>
+             <p><a href="aficher.php">Affichage</a></p>
+             <p><a href="stat.php">Statistiques</a></p>
+             <p>&nbsp;</p></th>
+             <td><form method="post" action="traitement.php">
+               <fieldset>
+               <p>
+                 <label for = "nom" class="Style4">Nom </label>          
+                    :   
+                    <input type="text" name="nom"  id = "nom"
+	size="30" maxlength="30" tabindex="10" />
+                 <br />
+                 <label for="prenom"><br />
+                 <strong>Prenom</strong> :</label>
+               
+                 <input name="prenom" type="text" id="prenom" tabindex="20" size="30" maxlength="20" />
+</p>
+               <p>
+                 <label for="ville"><strong>Ville</strong></label>
+                 :
+                 <input name="ville" type="text" id="ville" tabindex="30" size="30" maxlength="40" />                 
+                 <br />
+                 <label for="age"><br />
+                 <strong>Age</strong></label>
+                 :
+                 <input name="age" type="text" id="age" tabindex="40" size="15" maxlength="2" />
+</p>
+         <p><strong>Sexe</strong> :<br />
+                   <input type="radio" name="sex" value="f" id="f"
+	tabindex="50" />
+                   <label for="f">Feminin</label>
+                   <br />
+                   <input type="radio" name="sex" value="m" id="m"
+	tabindex="60"/>
+                   <label for="m">Masculin</label>
+               </p>
+         <p><strong>Formation</strong> :          
+         <p>
+           <input name="Formation" type="radio" id="Fromation" tabindex="70" value="Diplomante" />
+           Diplomante         
+         <p>
+           <input name="Formation" type="radio" id="Formation" tabindex="80" value="Qualifiante" />
+           Qualifiante
+           <p>
+             <input name="Formation" type="radio" id="Formation" tabindex="90" value="Langue" />
+             Langue
+           <p><strong>Hebergement</strong> :</p>
+           <p>  
+             <input name="Hebergement" type="radio" tabindex="100" value="Oui" />
+             Oui</p>
+           <p>
+             <input name="Hebergement" type="radio" tabindex="110" value="Non" />
+             Non <br />
+             </p>
+               </fieldset>
+               <p>
+                 <input name="submit" type="submit" />
+                 <input name="reset" type="reset" />
+               </p>
+             </form>             </td>
+           </tr>
+</table>
+</body>
+
+</html>
